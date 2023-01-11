@@ -164,7 +164,7 @@ def main():
 
     print("Generating feature vectors......")
 
-    pool = Pool(-1)
+    pool = Pool()
     pool.map(process_csv, experiments_all)
     pool.close()
     pool.join()
